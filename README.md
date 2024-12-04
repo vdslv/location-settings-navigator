@@ -1,6 +1,10 @@
 # location-settings-navigator
 
-Navigate user directly to location permission settings of an app.
+### Capacitor plugin for Android.
+
+### You should have previous location permission granted ("While using app", "Ask all the time", etc.)
+
+Navigates user directly to location permission settings of an app.
 
 ## Install
 
