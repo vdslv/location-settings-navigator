@@ -1,3 +1,8 @@
 export interface LocationSettingsNavigatorPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  openLocationSettings(): Promise<void>;
+  checkPermission(): Promise<PermissionStatus>;
+}
+
+export interface PermissionStatus {
+  granted: boolean;
 }

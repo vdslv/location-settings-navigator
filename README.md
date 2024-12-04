@@ -13,25 +13,42 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`openLocationSettings()`](#openlocationsettings)
+* [`checkPermission()`](#checkpermission)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### openLocationSettings()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+openLocationSettings() => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+--------------------
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+### checkPermission()
+
+```typescript
+checkPermission() => Promise<PermissionStatus>
+```
+
+**Returns:** <code>Promise&lt;<a href="#permissionstatus">PermissionStatus</a>&gt;</code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### PermissionStatus
+
+| Prop          | Type                 |
+| ------------- | -------------------- |
+| **`granted`** | <code>boolean</code> |
 
 </docgen-api>
