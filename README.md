@@ -13,6 +13,17 @@ npm install location-settings-navigator
 npx cap sync
 ```
 
+## Example:
+```typescript
+import { LocationSettingsNavigatorPlugin } from 'location-settings-navigator';
+const LocationSettingsNavigator = registerPlugin<LocationSettingsNavigatorPlugin>('LocationSettingsNavigator');
+  
+const permission = await LocationSettingsNavigator.checkPermission();
+if (!permission.granted) {
+  LocationSettingsNavigator.openLocationSettings()
+}
+```
+
 ## API
 
 <docgen-index>
